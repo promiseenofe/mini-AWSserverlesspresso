@@ -1,7 +1,7 @@
 Resources:
-  MetricsFunction:
+  LoggerExtension:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: metrics.handler
+      Handler: logger.handler
       Runtime: nodejs18.x
       CodeUri: .
