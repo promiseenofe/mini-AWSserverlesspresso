@@ -1,8 +1,20 @@
+
+This project captures the core concept of a serverless coffee order system, inspired by the official AWS Serverlesspresso workshop.
+I participated in the full in person workshop during AWS Summit 2025
+Where i learned to design and deploy a full serverless web application workshop, Amazon
+In the "Serverlesspresso" AWS workshop. I learned event driven architecture.
+Used various AWS technologies like AWS lambda, AWS event bridge and step
+functions + more to automate back end workflows in a coffee-ordering system.
+
 # mini-AWSserverlesspresso
 The mini project captures the core concept of a serverless coffee order system:  User signup with custom auth triggers  Orders stored in DynamoDB  Basic Lambda backend serving orders  Minimal monitoring/logging extension  But it does not implement the full complexity or feature set of the official workshop.
 
-☕️ Mini AWS Serverlesspresso
-This project captures the core concept of a serverless coffee order system, inspired by the official AWS Serverlesspresso workshop. It demonstrates:
+
+
+
+# ☕️ Mini AWS Serverlesspresso
+
+It demonstrates:
 
 User signup with custom authentication triggers
 
@@ -12,12 +24,12 @@ A basic Lambda backend serving orders
 
 Minimal monitoring/logging extension
 
-Note: This mini version focuses on core functionalities and does not implement the full complexity or feature set of the official workshop.
+# Note: This mini version focuses on core functionalities and does not implement the full complexity or feature set of the official workshop.
 
 
 So the project directory structure
 
-mini-serverlesspresso/ ----------->  
+# mini-serverlesspresso/ ----------->  
 
 (# Authentication Logic (Cognito))
 # 00-baseCore/    ------>              define-auth-challenge,  pre-sign-up.js, template.yaml
