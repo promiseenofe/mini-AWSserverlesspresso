@@ -1,12 +1,19 @@
 Resources:
-  OrdersTable:
-    Type: AWS::DynamoDB::Table
+  OrderManagerFunction:
+    Type: AWS::Serverless::Function
     Properties:
-      TableName: MiniOrdersTable
-      AttributeDefinitions:
-        - AttributeName: orderId
-          AttributeType: S
-      KeySchema:
-        - AttributeName: orderId
-          KeyType: HASH
-      BillingMode: PAY_PER_REQUEST
+      Handler: index.handler
+      Runtime: nodejs18.x
+      CodeUri: .
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: MiniOrdersTable
+      Environment:
+        Variables:
+          ORDERS_TABLE: MiniOrdersTable
+      Events:
+        ApiEvent:
+          Type: Api
+          Properties:
+            Path: /orders
+            Method: get
