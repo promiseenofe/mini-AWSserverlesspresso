@@ -14,26 +14,27 @@ Minimal monitoring/logging extension
 
 Note: This mini version focuses on core functionalities and does not implement the full complexity or feature set of the official workshop.
 
-mini-serverlesspresso/
-├── 00-baseCore/                      # Authentication Logic (Cognito)
-│   ├── define-auth-challenge.js
-│   ├── pre-sign-up.js
-│   └── template.yaml
 
-├── 01-appCore/
-│   └── initDB/                       # Seed initial data (e.g., orders)
-│       ├── seedOrders.js
-│       └── template.yaml
+So the project directory structure
 
-├── backends/
-│   └── 5-order-manager/              # Order management logic
-│       ├── index.js
-│       └── template.yaml
+mini-serverlesspresso/ ----------->  
 
-├── extensions/                       # Optional utilities (metrics, logs)
-│   ├── logger.js
-│   ├── metrics.js
-│   └── README.md
+(# Authentication Logic (Cognito))
+# 00-baseCore/    ------>              define-auth-challenge,  pre-sign-up.js, template.yaml
+
+
+(# Seed initial data (e.g., orders))
+# 01-appCore/ ---> initDB/               -------->               seedOrders.js ,   template.yaml
+
+
+(# Order management logic)
+# backends/ ------>  5-order-manager/              # Order management logic ----> index.js  ---->       template.yaml
+
+
+( Optional utilities (metrics, logs))
+# extensions/                   ---->   logger.js,    metrics.js,    README.md
+
+
 
 └── README.md                         # This file
 
